@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI/IT 日报 - 历史归档</title>
+    <title>AI/IT 日报 - {{date}}</title>
     <style>
         * {
             margin: 0;
@@ -36,31 +36,43 @@
             font-size: 2em;
             margin-bottom: 10px;
         }
+        .header .date {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
         .content {
             padding: 30px;
         }
-        .archive-list {
-            list-style: none;
+        .news-item {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 0 8px 8px 0;
         }
-        .archive-list li {
-            padding: 15px;
-            border-bottom: 1px solid #eee;
+        .news-item:last-child {
+            margin-bottom: 0;
         }
-        .archive-list li:last-child {
-            border-bottom: none;
+        .news-item h3 {
+            color: #667eea;
+            font-size: 1.1em;
+            margin-bottom: 10px;
         }
-        .archive-list a {
+        .news-item p {
+            color: #555;
+            font-size: 0.95em;
+        }
+        .news-item .source {
+            margin-top: 10px;
+            font-size: 0.85em;
+            color: #888;
+        }
+        .news-item .source a {
             color: #667eea;
             text-decoration: none;
-            font-size: 1.1em;
         }
-        .archive-list a:hover {
+        .news-item .source a:hover {
             text-decoration: underline;
-        }
-        .archive-list .date {
-            color: #888;
-            font-size: 0.9em;
-            margin-left: 10px;
         }
         .footer {
             background: #f8f9fa;
@@ -69,34 +81,24 @@
             color: #888;
             font-size: 0.9em;
         }
+        .emoji {
+            font-size: 1.5em;
+            margin-right: 8px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1><span class="emoji">📚</span>AI/IT 日报 - 历史归档</h1>
+            <h1><span class="emoji">🤖</span>AI/IT 日报</h1>
+            <div class="date">{{date}}</div>
         </div>
         <div class="content">
-            <ul class="archive-list" id="archive-list">
-                <!-- 归档列表将由脚本生成 -->
-            </ul>
+            {{news_content}}
         </div>
         <div class="footer">
-            <p>由 🦞 龙虾 1 号 自动生成</p>
+            <p>由 🦞 龙虾 1 号 自动生成 | <a href="index.html" style="color:#667eea">查看历史归档</a></p>
         </div>
     </div>
-    <script>
-        // 自动生成最近 30 天的日期链接
-        const archiveList = document.getElementById('archive-list');
-        const today = new Date();
-        for (let i = 0; i < 30; i++) {
-            const date = new Date(today);
-            date.setDate(date.getDate() - i);
-            const dateStr = date.toISOString().split('T')[0];
-            const li = document.createElement('li');
-            li.innerHTML = `<a href="${dateStr}.html">${dateStr}</a><span class="date">(第${i === 0 ? '今天' : i + '天前'}的日报)</span>`;
-            archiveList.appendChild(li);
-        }
-    </script>
 </body>
 </html>
