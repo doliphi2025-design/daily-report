@@ -25,7 +25,7 @@ daily-report/
 2. Source 选择：Deploy from a branch
 3. Branch 选择：main / master
 4. Folder: / (root)
-5. 保存后等待部署，获得链接：`https://doliphi2025.github.io/daily-report/`
+5. 保存后等待部署，获得链接：`https://doliphi2025-design.github.io/daily-report/`
 
 ### 3. 配置 Git 凭据
 在本地配置 Git（用于自动推送）：

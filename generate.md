@@ -38,9 +38,9 @@ git push origin main
 
 📅 日期：YYYY-MM-DD
 📰 新闻数量：X 条
-🔗 链接：https://doliphi2025.github.io/daily-report/YYYY-MM-DD.html
+🔗 链接：https://doliphi2025-design.github.io/daily-report/YYYY-MM-DD.html
 
-历史归档：https://doliphi2025.github.io/daily-report/
+历史归档：https://doliphi2025-design.github.io/daily-report/
 ```
 
 ## 注意事项
