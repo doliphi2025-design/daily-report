@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>每日 AI/IT 日报 - 2026 年 3 月 14 日</title>
+    <title>纺织化纤行业日报 - 内网门户</title>
     <style>
         * {
             margin: 0;
@@ -11,160 +11,175 @@
             box-sizing: border-box;
         }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: #f5f5f5;
+            font-family: "Microsoft YaHei", Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
         }
         .container {
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            max-width: 900px;
+            margin: 0 auto;
         }
-        header {
-            border-bottom: 3px solid #007bff;
-            padding-bottom: 20px;
-            margin-bottom: 30px;
-        }
-        h1 {
-            color: #007bff;
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
-        .date {
-            color: #666;
-            font-size: 14px;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .section-title {
-            font-size: 20px;
-            color: #333;
-            border-left: 4px solid #007bff;
-            padding-left: 12px;
-            margin-bottom: 15px;
-        }
-        .news-item {
-            background: #f8f9fa;
-            border-radius: 8px;
-            padding: 15px;
-            margin-bottom: 12px;
-            border-left: 3px solid #28a745;
-        }
-        .news-item h3 {
-            font-size: 16px;
-            color: #212529;
-            margin-bottom: 8px;
-        }
-        .news-item p {
-            font-size: 14px;
-            color: #666;
-            margin-bottom: 5px;
-        }
-        .news-item .source {
-            font-size: 12px;
-            color: #999;
-        }
-        .news-item.it {
-            border-left-color: #17a2b8;
-        }
-        footer {
-            margin-top: 40px;
-            padding-top: 20px;
-            border-top: 1px solid #eee;
+        .header {
             text-align: center;
-            font-size: 12px;
-            color: #999;
+            color: white;
+            margin-bottom: 40px;
+        }
+        .header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        .report-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .report-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.25);
+        }
+        .report-card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        .report-card .meta {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 20px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .report-card .meta span {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .report-card .desc {
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .report-card .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.3s ease;
+        }
+        .report-card .btn:hover {
+            opacity: 0.9;
         }
         .tag {
             display: inline-block;
-            padding: 2px 8px;
-            border-radius: 4px;
+            padding: 4px 12px;
+            background: #f0f0ff;
+            color: #667eea;
+            border-radius: 20px;
             font-size: 12px;
-            margin-right: 5px;
+            margin-right: 8px;
         }
-        .tag-ai {
-            background: #e3f2fd;
-            color: #1976d2;
+        .tag.new {
+            background: #ff6b6b;
+            color: white;
         }
-        .tag-it {
-            background: #e0f7fa;
-            color: #0097a7;
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            opacity: 0.8;
+            font-size: 14px;
+        }
+        .status {
+            background: rgba(255,255,255,0.2);
+            padding: 15px 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            color: white;
+            text-align: center;
+        }
+        .status .online {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: #4ade80;
+            border-radius: 50%;
+            margin-right: 8px;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>🤖 每日 AI/IT 日报</h1>
-            <p class="date">2026 年 3 月 14 日 星期六</p>
-        </header>
-
-        <div class="section">
-            <h2 class="section-title">AI 要闻</h2>
-            
-            <div class="news-item">
-                <h3><span class="tag tag-ai">AI</span>Block 员工拒绝加薪留任：AI 是吞噬岗位的反乌托邦</h3>
-                <p>公司文化正在崩溃，员工对管理层的信任彻底瓦解。员工担心 AI 技术将导致大规模失业。</p>
-                <p class="source">来源：字母 AI · 2 小时前</p>
-            </div>
-
-            <div class="news-item">
-                <h3><span class="tag tag-ai">AI</span>量子位专访陶哲轩：我为什么现在创办一个 AI x Science 组织</h3>
-                <p>数学家陶哲轩分享创办 AI 科学研究组织的初衷，认为未来可能会有 10000 个陶哲轩级别的 AI 助手。</p>
-                <p class="source">来源：量子位 · 4 小时前</p>
-            </div>
-
-            <div class="news-item">
-                <h3><span class="tag tag-ai">AI</span>为了让机器人学会做家务，这家公司做了一副 200 美元的「技能手套」</h3>
-                <p>通过众包方式收集人类操作数据，首批「众包申请」被一抢而空，帮助机器人学习复杂家务技能。</p>
-                <p class="source">来源：极客公园 · 4 小时前</p>
-            </div>
-
-            <div class="news-item">
-                <h3><span class="tag tag-ai">AI</span>对话科大讯飞刘庆峰：面对 AI，先用起来</h3>
-                <p>科大讯飞创始人刘庆峰表示无需为 AI 焦虑，鼓励人们积极拥抱 AI 技术，将其融入日常工作生活。</p>
-                <p class="source">来源：中国企业家杂志 · 4 小时前</p>
-            </div>
-
-            <div class="news-item">
-                <h3><span class="tag tag-ai">AI</span>月薪 3 万，AI 大厂正在「疯抢」文科生？</h3>
-                <p>AI 公司对人文社科背景人才需求激增，但 AI 岗位并非铁饭碗，需要持续学习和适应。</p>
-                <p class="source">来源：凤凰周刊 · 8 小时前</p>
-            </div>
+        <div class="header">
+            <h1>📊 纺织化纤行业日报</h1>
+            <p>上海远纺有限公司 · 内网信息平台</p>
         </div>
 
-        <div class="section">
-            <h2 class="section-title">IT 科技</h2>
-            
-            <div class="news-item it">
-                <h3><span class="tag tag-it">IT</span>GitHub Copilot 更新：支持更多编程语言</h3>
-                <p>GitHub 宣布 Copilot 新增对 Rust、Go 等系统编程语言的深度支持，代码生成准确率提升 30%。</p>
-                <p class="source">来源：TechCrunch · 今日</p>
-            </div>
-
-            <div class="news-item it">
-                <h3><span class="tag tag-it">IT</span>微软发布 Windows 12 预览版</h3>
-                <p>Windows 12 带来全新 AI 集成体验，包括智能任务调度、自动优化系统性能等功能。</p>
-                <p class="source">来源：The Verge · 今日</p>
-            </div>
-
-            <div class="news-item it">
-                <h3><span class="tag tag-it">IT</span>OpenAI 发布 GPT-5 技术报告</h3>
-                <p>GPT-5 在推理能力和多模态理解方面有显著提升，支持更长上下文和更复杂的任务规划。</p>
-                <p class="source">来源：OpenAI 官方博客 · 今日</p>
-            </div>
+        <div class="status">
+            <span class="online"></span>
+            服务运行中 | 内网访问地址：<strong>http://10.17.48.5:8080</strong>
         </div>
 
-        <footer>
-            <p>每日 AI/IT 日报 | 自动更新于 GitHub Pages</p>
-            <p>数据来源：36 氪、TechCrunch、The Verge 等</p>
-        </footer>
+        <div class="report-card">
+            <h2>🤖 2026 年 3 月 18 日 AI/IT 日报</h2>
+            <div class="meta">
+                <span>📅 2026-03-18</span>
+                <span>⏰ 14:00 更新</span>
+                <span>📡 来源：Tavily AI 搜索</span>
+            </div>
+            <div class="desc">
+                <span class="tag new">最新</span>
+                <span class="tag">AI 技术突破</span>
+                <span class="tag">大公司动态</span>
+                <span class="tag">行业趋势</span>
+                <p style="margin-top:15px;">
+                    今日重点：英伟达 CEO 预测 AI 繁荣将带来万亿美元订单；德国计划 2030 年前 AI 数据中心翻倍；
+                    谷歌个人智能功能向全美用户开放；英国任命国家 AI 冠军；CUNY 投资 300 万美元支持 113 个 AI 项目。
+                </p>
+            </div>
+            <a href="2026-03-18.html" class="btn" target="_blank">📖 阅读日报</a>
+        </div>
+
+        <div class="report-card">
+            <h2>📰 2026 年 3 月 17 日 日报</h2>
+            <div class="meta">
+                <span>📅 2026-03-17</span>
+                <span>⏰ 15:56 更新</span>
+                <span>📡 来源：Tavily AI + 实时抓取</span>
+            </div>
+            <div class="desc">
+                <span class="tag">原油价格</span>
+                <span class="tag">PTA/MEG</span>
+                <span class="tag">聚酯产业链</span>
+                <p style="margin-top:15px;">
+                    今日重点：霍尔木兹海峡供应中断，Brent 原油突破$103；亚洲 PX 供应紧张将冲击欧洲 PTA/PET 产业链；
+                    中国 1-2 月经济数据超预期，工业产出回升；2000 亿元制造业升级资金支持。
+                </p>
+            </div>
+            <a href="2026-03-17-纺织化纤行业日报.html" class="btn" target="_blank">📖 阅读日报</a>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 纺织化纤行业日报系统 | 内网部署</p>
+            <p>更新时间：2026 年 3 月 18 日 14:00 (Asia/Shanghai)</p>
+        </div>
     </div>
 </body>
 </html>
